@@ -1,0 +1,108 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h3,h4{
+    font-size: large;
+    font-weight: 700;
+    color: rgb(27, 172, 240);
+    margin: 0 0 10px 0;
+}
+
+h2{
+    color: rgb(63, 63, 83);
+    margin: 0 0 10px 0;
+}
+
+a{
+    color: rgb(27, 172, 240);
+}
+
+.cv{
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.contacts {
+    margin: 20px 0 20px 0;
+}
+.container{
+    display: flex;
+}
+.contact {
+    display: flex;
+}
+.contact_type img{
+    height: 20px;
+    width: 20px;
+}
+.contact_value1{
+    color: rgb(46, 34, 70);
+    text-decoration: underline;
+}
+.summary p{
+    margin: 20px 0;
+}
+
+.experience{
+    display: flex;
+    margin: 0 0 20px 0;
+}
+.experience_date{
+    min-width: 200px;
+}
+
+.experience_company{
+    font-style: italic;
+    margin: 0 0 5px 0;
+}
+
+section{
+    margin: 0 0 20px 0;
+}
+
+@media(max-width: 575px){
+    .experience{
+        display: block;
+    }
+}
+    
