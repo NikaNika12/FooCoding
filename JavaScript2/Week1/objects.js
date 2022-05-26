@@ -18,7 +18,7 @@ fetch("https://www.breakingbadapi.com/api/characters")
          const wrapper = document.querySelector("#wrapper");
          wrapper.style.display = 'grid';
          wrapper.style.justifyItems = 'center';
-         wrapper.style.gridTemplateColumns = 'repeat(6, 1fr';
+         wrapper.style.gridTemplateColumns = 'repeat(5, 1fr';
          wrapper.style.gap = '10px';
 
          const card = document.createElement("div");
