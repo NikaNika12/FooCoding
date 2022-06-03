@@ -1,0 +1,17 @@
+body{
+    background-color: #000;
+}
+h1{
+    color: yellow;
+}
+h2{
+    color:greenyellow;
+}
+p{
+    color:#fff;
+}
+img{
+    width: 200px;
+    height: 300px;
+    border: 5px solid greenyellow; 
+}
