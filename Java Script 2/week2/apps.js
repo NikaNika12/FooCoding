@@ -1,27 +1,21 @@
 'use strict';
 
-let book_titles = ['cleanse_to_heal', 'nutrition_and_physical_degeneration', 'fruit_infused_water', 'building_story_brand', 'starting_business_quickstart_quide', 'on_writing_well', '48_laws_of_power', 'a_promised_land', 'the_palace_papers', 'town_country'];
+let bookTitles = ['cleanse_to_heal', 'nutrition_and_physical_degeneration', 'fruit_infused_water', 'building_story_brand', 'starting_business_quickstart_quide', 'on_writing_well', '48_laws_of_power', 'a_promised_land', 'the_palace_papers', 'town_country'];
 
-console.log(book_titles);
-
-let new = document.createElement("ul");
-document.body.appendChild("new");
+console.log(bookTitles);
 
 
-let book_title = () => {
-   for (let i = 0; i < book_titles.length; i++) {
-     let li = document.createElement("li");
-     li.setAttribute('id', `${book_titles[i]}`);
-     li.textContent = `${book_titles[i]}`;
-     console.log(li);
-     ul.appendChild(li);
-     console.log(li);
-   }
- };
+function generateList() {
+  let newList = document.createElement('ul');
 
- book_title()
+  for (let i = 0; i < bookTitles.length; i++) {
+     newList.innerHTML += `<li>${bookTitles[i]}<li>`;
+  }
+  return newList;
+};
 
- let titles_properties = {
+document.body.append(generateList());
+let titlesProperties = {
     cleanse_to_heal: {
       id: 'cleanse_to_heal',
       title: 'cleanse_to_heal',
@@ -64,7 +58,7 @@ let book_title = () => {
         language: 'English',
         year: '2016',
     },
-    48_laws_of_power: {
+    laws_of_power: {
         id: '48_laws_of_power',
         title: '48_laws_of_power',
         author: 'Robert Greene',
@@ -92,26 +86,10 @@ let book_title = () => {
         language: 'English',
         year: '2021',
     },  
-}
+};
 
-let new = document.createElement("ul");
-let container = document.querySelector('.container').appendChild(ul);
-let booksArray = Object.entries(book_titles).map(book => book[1]);
-
-let objectElements = () => {
-  for (let i = 0; i < booksArray.length; i++) {
-    let li = document.createElement('li');
-    ul.appendChild(li);
-
-    let cover = document.createElement('div');
-    let image = document.createElement('img');
-    cover.appendChild(image);
-    cover.classList.add('cover');
-    li.appendChild(cover);
-
-    let info = document.createElement('div');
-    info.classList.add('info');
-    li.appendChild(info);
-  };
-}
-
+for (const [key, value] of Object.entries(titlesProperties)) {
+  console.log(`${key}: ${value}`)}
+  
+console.log(Object.keys(titlesProperties));
+console.log(Object.values(titlesProperties));
