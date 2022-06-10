@@ -1,17 +1,52 @@
+/* CSS styles */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
 body{
-    background-color: #000;
+  background-image: url("124383.jpg");
+  background-size: cover;
+  margin: 30px;
 }
+
+container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.books_header{
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.book{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  
+}
+
 h1{
-    color: yellow;
+  font-size: 28px;
 }
-h2{
-    color:greenyellow;
-}
-p{
-    color:#fff;
-}
+
 img{
-    width: 200px;
-    height: 300px;
-    border: 5px solid greenyellow; 
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  box-shadow: 7px 5px 7px rgb(0, 0, 0, 0.4);
 }
+
+a{
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: black;
+}
+	  
