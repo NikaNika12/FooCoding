@@ -1,8 +1,7 @@
-/* CSS styles */
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
 body{
-  background-image: url("124383.jpg");
+  background-image: url("./assets/124383.jpg");
   background-size: cover;
   margin: 30px;
 }
@@ -12,10 +11,12 @@ container{
   grid-template-columns: 1fr 1fr;
 }
 
-.books_header{
+.h2{
   font-size: 32px;
   font-weight: 800;
   margin-top: 10px;
+  color: white;
+  align-items: center;
 }
 
 .book{
@@ -49,4 +50,3 @@ a:hover{
   text-decoration: underline;
   color: black;
 }
-	  
