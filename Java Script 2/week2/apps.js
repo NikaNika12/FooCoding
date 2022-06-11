@@ -31,7 +31,7 @@ let titlesProperties = {
       language: 'English',
       info: https://liveweave.com,
       year: '2020',
-      img: "./assets/bookCovers/cleanse_to_heal.jpg"
+      img: "cleanse_to_heal.jpg"
     },
     nutrition_and_physical_degeneration: {
         id: 'nutrition_and_physical_degeneration',
@@ -40,7 +40,7 @@ let titlesProperties = {
         language: 'English',
         info: https://liveweave.com,
         year: '2009',
-        img: "./assets/bookCovers/nutrition_and_physical_degeneration.jpg"
+        img: "nutrition_and_physical_degeneration.jpg"
     },
     fruit_infused_water: {
         id: 'fruit_infused_water',
@@ -49,7 +49,7 @@ let titlesProperties = {
         info: https://liveweave.com,
         language: 'English',
         year: '2015',
-        img: "./assets/bookCovers/fruit_infused_water.jpeg"
+        img: "fruit_infused_water.jpeg"
     },
     building_story_brand: {
         id: 'building_story_brand',
@@ -58,7 +58,7 @@ let titlesProperties = {
         info: https://liveweave.com,
         language: 'English',
         year: '2017',
-        img: "./assets/bookCovers/laws_of_power.jpg"
+        img: "laws_of_power.jpg"
     },
     starting_business_quickstart_quide: {
         id: 'starting_business_quickstart_quide',
@@ -67,7 +67,7 @@ let titlesProperties = {
         info: https://liveweave.com,
         language: 'English',
         year: '2019',
-        img: "./assets/bookCovers/starting_business_quickstart_quide.jpeg"
+        img: "starting_business_quickstart_quide.jpeg"
     },
     on_writing_well: {
         id: 'on_writing_well',
@@ -76,7 +76,7 @@ let titlesProperties = {
         info: https://liveweave.com,
         language: 'English',
         year: '2016',
-        img: "./assets/bookCovers/on_writing_well.jpg"
+        img: "on_writing_well.jpg"
     },
     laws_of_power: {
         id: '48_laws_of_power',
@@ -85,7 +85,7 @@ let titlesProperties = {
         info: https://liveweave.com,
         language: 'English',
         year: '2000',
-        img: "./assets/bookCovers/laws_of_power.jpg"
+        img: "laws_of_power.jpg"
     },
     a_promised_land: {
         id: 'a_promised_land',
@@ -94,7 +94,7 @@ let titlesProperties = {
         info: https://liveweave.com,
         language: 'English',
         year: '2021',
-        img: "./assets/bookCovers/a_promised_land.jpg"
+        img: "a_promised_land.jpg"
     },
     the_palace_papers: {
         id: 'the_palace_papers',
@@ -103,7 +103,7 @@ let titlesProperties = {
         info: https://liveweave.com,
         language: 'English',
         year: '2022',
-        img: "./assets/bookCovers/the_palace_papers.jpg"
+        img: "the_palace_papers.jpg"
     },
     town_country: {
         id: 'town_country',
@@ -112,7 +112,7 @@ let titlesProperties = {
         info: https://liveweave.com,
         language: 'English',
         year: '2021',
-        img: "./assets/bookCovers/town_country.jpg"
+        img: "town_country.jpg"
     },  
 };
 
