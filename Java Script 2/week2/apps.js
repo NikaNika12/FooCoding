@@ -31,7 +31,7 @@ let titlesProperties = {
       language: 'English',
       info: https://liveweave.com,
       year: '2020',
-      img: ""
+      img: "./assets/bookCovers/cleanse_to_heal.jpg"
     },
     nutrition_and_physical_degeneration: {
         id: 'nutrition_and_physical_degeneration',
@@ -40,7 +40,7 @@ let titlesProperties = {
         language: 'English',
         info: https://liveweave.com,
         year: '2009',
-        img: ""
+        img: "./assets/bookCovers/nutrition_and_physical_degeneration.jpg"
     },
     fruit_infused_water: {
         id: 'fruit_infused_water',
@@ -49,7 +49,7 @@ let titlesProperties = {
         info: https://liveweave.com,
         language: 'English',
         year: '2015',
-        img: ""
+        img: "./assets/bookCovers/fruit_infused_water.jpeg"
     },
     building_story_brand: {
         id: 'building_story_brand',
@@ -58,7 +58,7 @@ let titlesProperties = {
         info: https://liveweave.com,
         language: 'English',
         year: '2017',
-        img: ""
+        img: "./assets/bookCovers/laws_of_power.jpg"
     },
     starting_business_quickstart_quide: {
         id: 'starting_business_quickstart_quide',
@@ -67,7 +67,7 @@ let titlesProperties = {
         info: https://liveweave.com,
         language: 'English',
         year: '2019',
-        img: ""
+        img: "./assets/bookCovers/starting_business_quickstart_quide.jpeg"
     },
     on_writing_well: {
         id: 'on_writing_well',
@@ -76,7 +76,7 @@ let titlesProperties = {
         info: https://liveweave.com,
         language: 'English',
         year: '2016',
-        img: ""
+        img: "./assets/bookCovers/on_writing_well.jpg"
     },
     laws_of_power: {
         id: '48_laws_of_power',
@@ -85,7 +85,7 @@ let titlesProperties = {
         info: https://liveweave.com,
         language: 'English',
         year: '2000',
-        img: ""
+        img: "./assets/bookCovers/laws_of_power.jpg"
     },
     a_promised_land: {
         id: 'a_promised_land',
@@ -94,7 +94,7 @@ let titlesProperties = {
         info: https://liveweave.com,
         language: 'English',
         year: '2021',
-        img: ""
+        img: "./assets/bookCovers/a_promised_land.jpg"
     },
     the_palace_papers: {
         id: 'the_palace_papers',
@@ -103,7 +103,7 @@ let titlesProperties = {
         info: https://liveweave.com,
         language: 'English',
         year: '2022',
-        img: ""
+        img: "./assets/bookCovers/the_palace_papers.jpg"
     },
     town_country: {
         id: 'town_country',
@@ -112,7 +112,7 @@ let titlesProperties = {
         info: https://liveweave.com,
         language: 'English',
         year: '2021',
-        img: ""
+        img: "./assets/bookCovers/town_country.jpg"
     },  
 };
 
@@ -134,10 +134,10 @@ function showBooks() {
         const h2 = document.createElement("h2");
         const year = document.createElement("p", ".year")
         const language = document.createElement("p", ".language")
-      const info = document.createElement("a")
-      info.setAttribute("href", titlesProperties[key].info)
-      info.setAttribute("alt", "More information")
-      info.setAttribute("target", "_blank")
+        const info = document.createElement("a")
+        info.setAttribute("href", titlesProperties[key].info)
+        info.setAttribute("alt", "More information")
+        info.setAttribute("target", "_blank")
       
         h1.innerHTML = h1.innerHTML += titlesProperties[key].title;
         h2.innerHTML = h2.innerHTML += titlesProperties[key].author;
@@ -153,47 +153,38 @@ function showBooks() {
         oneBook.appendChild(year);
         oneBook.appendChild(language);
         oneBook.appendChild(info);
+    
       
-      
-      
-
-      const onLoad = () => {
+        const onLoad = () => {
         oneBook.style.display = "none"
         cover.style.display = "block"
-      }
+        };
 
-      cover.addEventListener("load", onLoad);
+        cover.addEventListener("load", onLoad);
 
-      const mouseOver = () => {
+        const mouseOver = () => {
         //cover.style.display = "none";
         cover.style.position = "absolute"
         cover.style.opacity = "0.2"
         oneBook.style.display = "block"
-        oneBook.style.position = "relative"
+        oneBook.style.position = "relative" 
+        };
 
-        
-        
-      }
-      const mouseOut = () => {
+        const mouseOut = () => {
         cover.style.display = "block";
         cover.style.opacity = "1"
         oneBook.style.display = "none";
         cover.style.position = "relative"
         oneBook.style.position = "absolute"
-        
-      }
+        };
 
       
-      cover.addEventListener("mouseenter", mouseOver)
-      cover.addEventListener("mouseleave", mouseOut)
-
+        cover.addEventListener("mouseenter", mouseOver)
+        cover.addEventListener("mouseleave", mouseOut)
     }
-
-  }
- 
-  showBooks();
 };
-
+        
+console.log(showBooks());
 
 
 
@@ -205,4 +196,5 @@ div.innerHTML = '<button id="btn" name="btn">Button</button>';
 const button = document.getElementById('button');
 button.addEventListener('click', showBooks);
 
+    
 
