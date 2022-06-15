@@ -86,3 +86,15 @@ function repeatStringFor(str, num) {
 }
 
 repeatStringFor('abc', 3);
+
+// 2.4  
+
+function Dog() {
+  this.name = 'Haski';
+  this.eyes = 'blue';
+  this.foodtype = 'meat';
+  this.color = 'gray';
+}
+
+let betsi = new Dog();
+console.log(betsi);
