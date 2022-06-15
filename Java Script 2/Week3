@@ -1,0 +1,88 @@
+// 2.1 
+function foo(func) {
+  func(Math.max(1, 3, 2));
+}
+
+function bar() {
+  console.log('Hello, I am bar!');
+}
+
+foo(bar);
+
+// 2.2
+function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
+  const numbers = [];
+
+  for (const i = startIndex; i <= stopIndex; i++) {
+    numbers.push(i);
+  }
+
+  numbers.forEach(number => {
+    if (number % 5 === 0) {
+      fiveCallback(number);
+    } else if (number % 3 === 0) {
+      threeCallback(number);
+    }
+  });
+}
+
+function sayThree(number) {
+  console.log(`The value is ${number} is divisible by 3.`);
+}
+
+function sayFive(number) {
+  console.log(`The value is ${number} is divisible by 5.`);
+}
+
+threeFive(10, 15, sayThree, sayFive);
+
+// 2.3 
+
+function repeatStringNumTimes(str, num) {
+  return str;
+}
+repeatStringNumTimes("abc", 3);
+
+function repeatStringNumTimes(string, times) {
+  let repeatedStringT = "";
+  while (times > 0) { 
+    repeatedStringT += string; 
+    times--;
+  return repeatedStringT; 
+}
+
+repeatStringNumTimes("abc", 3);
+
+function repeatStringWhile(str, num) {
+  let repeatedStringW = '';
+  let i = 0;
+  while (i < num) {
+    repeatedStringW += str;
+    i++;
+  }
+  console.log(out);
+}
+
+repeatStringWhile('abc', 3);
+
+function repeatStringDoWhile(str, num) {
+  let repeatedStringDW = '';
+  let i = 0;
+  do {
+    repeatedStringDW += str;
+    i++;
+  } while (i < num);
+  console.log(out);
+}
+
+repeatStringDoWhile('abc', 3);
+
+function repeatStringFor(str, num) {
+  let repeatStringF = '';
+  for (let i = 0; i < num; i++) {
+    repeatStringF += str;
+  }
+  console.log(out);
+}
+
+repeatStringFor('abc', 3);
