@@ -160,3 +160,11 @@ function createBase(base) {
 const addSix = createBase(6);
 console.log(addSix(10)); // returns 16
 console.log(addSix(21)); // returns 27
+
+//3.1
+
+const generalArray = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
+const uniqueArray = [...new Set(generalArray)];
+
+console.log(uniqueArray);
+
