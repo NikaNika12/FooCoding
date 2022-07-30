@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="main-page">
+    <header class="section sec1 header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="/img/home.jpg" alt="">
+                </div>
+            </div>
+            <div class="right-header">
+            <canvas id="canvas1"></canvas>
+                <h1 class="name">
+                    <div class="text-1">Hello, my name is</div>
+                    <div class="text-2"><span>Veronika Pastushkova</span></div>
+                    <div class="text-3">I'm a </div>
+                </h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section sec2 about" id="about">
+            <div class="main-title">
+                <h2 class="run-text"><span>About me</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eveniet labore nihil obcaecati consequatur. Debitis error doloremque, 
+                        vero eos vel nemo eius voluptatem dicta tenetur modi. <br /> <br /> La musica
+                        delectus dolore fugiat exercitationem a, 
+                        ipsum quidem quo enim natus accusamus labore dolores nam. Unde.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Harum non necessitatibus deleniti eum soluta.
+                    </p>
+                    <div class="btn-con">
+                        <a href="" class="main-btn">
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <i class="fa-solid fa-hourglass-end"></i>
+                        <div class="about-item-label">Fast</div>
+                        <p>Fast load times and lag free interaction, my highest priority.</p>
+                    </div>    
+                    <div class="about-item">
+                        <i class="fa-solid fa-display"></i>
+                        <div class="about-item-label">Responsive</div>
+                        <p>My layouts will work on any device, big or small.</p>
+                    </div>
+                    <div class="about-item">
+                        <i class="fa-solid fa-face-smile"></i>
+                        <div class="about-item-label">Intuitive</div>
+                        <p>Strong preference for easy to use</p>
+                    </div>    
+                    <div class="about-item">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <div class="about-item-label">Creative</div>
+                        <p>Websites don't have to be static, I love making pages come to life.</p>
+                    </div>        
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">My Skills</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">html</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">css</p>
+                        <div class="progress-con">
+                            <p class="prog-text">60%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">javascript</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">ReactJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">1%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">NodeJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">1%</p>
+                            <div class="progress">
+                                <span class="node"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Photoshop</p>
+                        <div class="progress-con">
+                            <p class="prog-text">60%</p>
+                            <div class="progress">
+                                <span class="photoshop"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-title">My Services</h4>
+            <div class="services">
+                <div class="about-item">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <div class="about-item-label">HTML & CSS Responsive Web Design</div>
+                    <p>Enterprise-class websites need consistent colors, fonts, and design to match the organization's branding guidelines. Toptal’s front-end developers are experts at designing responsive websites, with CSS at the core of front end development alongside JavaScript and HTML.</p>
+                </div>    
+                <div class="about-item">
+                    <i class="fa-brands fa-react"></i>
+                    <div class="about-item-label">React JS Development</div>
+                    <p>ReactJS is renowned for its extensibility, adjustability, and convenience. Toptal ReactJS developers create complex software for your business, including web browsers and mobile application user interfaces.</p>
+                </div>
+                <div class="about-item">
+                    <i class="fa-brands fa-node"></i>
+                    <div class="about-item-label">Node.js Development</div>
+                    <p>Node.js enables fast and scalable server-side and networking applications. Toptal Node.js developers produce dynamic web page content before the page is sent to the end user's web browser, using event-driven programming to communicate with web servers through speedy JavaScript interpreters.</p>
+                    </div>    
+                <div class="about-item">
+                    <i class="fa-brands fa-js-square"></i>
+                    <div class="about-item-label">Javascript Development</div>
+                    <p>JavaScript frameworks sit at the heart of any modern website. Toptal JavaScript developers use their extensive experience with core JavaScript development and the newest frameworks and libraries to build dynamic and responsive websites.</p>
+                </div>
+            </div>  
+            <h4 class="stat-title">My Education</h4>
+            <div class="education">
+                <div class="education-item">
+                    <div class="ed-icon">
+                        <i class="fa-solid fa-file-code"></i>
+                    </div>
+                    <p class="ed-duration">April 2022 - present</p>
+                    <h5>FooCoding intensive course</h5>
+                    <p>
+                        Fullstack Web Developer (class M10).
+                    </p>
+                </div>
+                <div class="education-item">
+                    <div class="ed-icon">
+                        <i class="fa-solid fa-file-code"></i>
+                    </div>
+                    <p class="ed-duration">May 2022 - July 2022</p>
+                    <h5>FreeCodeCamp Course</h5>
+                    <p>
+                        JavaScript Algorithms and Data Structures Certification.
+                        </br>
+                        </br>
+                        Responsive Web Design Certification.
+                    </p>
+                </div>
+                <div class="education-item">
+                    <div class="ed-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <p class="ed-duration">2009 - 2013</p>
+                    <h5>Kiev National Linguistic University</h5>
+                    <p>
+                        Department of Economics and Management with knowledge of two languages (English and German).  
+                    </p>
+                </div> 
+            </div>              
+        </section>   
+        <section class="section sec3 portfolio" id="portfolio">
+            <div class="main-title">
+                <h2 class="run-text"><span>My Projects</span></h2>
+            </div>
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/flexbox-cssgrid-practical-example.webp" alt="">
+                    </div>
+                    <h3>Grid and Flex practice</h3>
+                    <div class="hover-items">
+                        <h3>Html/Css</h3>
+                        <p>Project Source</p>
+                        <div class="icons">
+                            <a href="https://github.com/NikaNika12/FooCoding/tree/main/hyf-html-css/week1" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://nikanika12.github.io/FooCoding/hyf-html-css/week1/" class="icon">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/Website-Creation.png" alt="">
+                    </div>
+                    <h3>Basic Site Creation</h3>
+                    <div class="hover-items">
+                        <h3>Html/Css</h3>
+                        <p>Project Source</p>
+                        <div class="icons">
+                            <a href="https://github.com/NikaNika12/FooCoding/tree/main/hyf-html-css/week3" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://nikanika12.github.io/FooCoding/hyf-html-css/week3/" class="icon">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/jsonapi.png" alt="">
+                    </div>
+                    <h3>API Json Practice</h3>
+                    <div class="hover-items">
+                        <h3>Html/Css/JS</h3>
+                        <p>Project Source</p>
+                        <div class="icons">
+                            <a href="https://github.com/NikaNika12/FooCoding/tree/main/JavaScript2/Week1" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://nikanika12.github.io/FooCoding/JavaScript2/Week1/" class="icon">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <section class="section sec4 blog" id="blog">
+            <div class="blog-content">
+                <div class="main-title">
+                    <h2 class="run-text"><span>Life Blog</span></h2>
+                </div>
+                <div class="blogs">
+                    <div class="blog">
+                        <img src="img/scuba-diving-canary-islands-2.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How Learning to Code Changed My Life
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/Beautiful-nature-wallpaper-of-beach.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                18 Skills All Programmers Need to Have (2022 List)
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/learn-programming-code-keyboard.webp" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Top JavaScript Frameworks and Libraries That Will Rule in 2022
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/most-beautiful-places-in-europe.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                The Guide I Wish I Had When I Started Learning to Code
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/1599084192-Ent-CodingBundle.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                JavaScript Frontend Speed is the Next Big Thing
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/8-01.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Rest is the best recipe to be motivated
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sec5 contacts" id="contacts">
+            <div class="over">
+                <div class="contact-container">
+                    <div class="static-title">
+                        <h2 class="run-text">Contact <span>me</span></h2>
+                    </div>
+                    <div class="contact-content-con">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-map-location"></i>
+                                    <span>Adress:</span>
+                                </div>
+                                <p>
+                                    Helsingborg, Sweden
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fa-solid fa-at"></i>
+                                    <span>Email:</span>
+                                </div>
+                                <p>
+                                    <span>pastushkova.veronika@yandex.ru</span>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <form id="form" action="" class="contact-form" >
+                            <div class="input-control i-c-2">
+                                <input type="text" name="name" required placeholder="Name">
+                                <input type="email" name="email" required placeholder="Email">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" name="subject" required placeholder="Subject">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="message" cols="15" rows="8" placeholder="Type your message here..."></textarea>
+                            </div>
+                            <div class="contact-btn">
+                                <input type="submit" name="btn" value="Send message" id="send-form">
+                            </div>
+                        </form>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="https://ru-ru.facebook.com/veronika.pastushkova" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://github.com/NikaNika12" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.instagram.com/mayskaya_veronika/" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="controls">
+        <div class="control control-1 active-btn" data-id="home">
+            <i class="fa-solid fa-house-chimney"></i>
+        </div>
+        <div class="control control-2" data-id="about">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="control control-3" data-id="portfolio">
+            <i class="fa-solid fa-code"></i>
+        </div>
+        <div class="control control-4" data-id="blog">
+            <i class="fa-brands fa-blogger"></i>
+        </div>
+        <div class="control control-5" data-id="contacts">
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
